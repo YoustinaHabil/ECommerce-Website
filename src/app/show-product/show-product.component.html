@@ -1,0 +1,56 @@
+<div class="container" >
+  
+    <div class="card" style="width: 85rem;">
+        <div class="card-header">
+       Product
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr >
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">category_id</th>
+                        <th scope="col">image_url</th>
+                      </tr>
+                  <tr *ngFor="let item of products;let currentIndex=index">
+                    <th scope="col">{{item.id}}</th>
+                    <th scope="col">{{item.name}}</th>
+                    <th scope="col">{{item.price}}</th>
+                    <th scope="col">{{item.description}}</th>
+                    <th scope="col">{{item.category_id}}</th>
+                    <!-- <th scope="col"><img src="{{item.image_url}}" style="width: 10%;"></th> -->
+                    <th scope="col"><button type="button" class="btn btn-primary"  >Edit</button></th>
+                    <th scope="col"> <button type="button" class="btn btn-danger" >Delete</button></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr >
+                    <th scope="row"></th>
+                    <td>
+                    
+                      </td>
+           
+                </tbody>
+              </table>
+        </div> 
+ 
+      </div>
+    
+<!-- <div style="width:30%" >
+  <h1>Edit Student</h1>
+ First Name <input #inputFirstName class="form-control" type="text"   >
+ Last Name <input #inputLastName class="form-control" type="text"   >
+ Mobile <input #inputMobile class="form-control" type="text"  >
+ Email <input #inputEmail class="form-control" type="text"  >
+ NationalID <input #inputNationalID class="form-control" type="text"  >
+ Age <input #inputAge class="form-control" type="number"  >
+Arabic Name <input #inputFirstName class="form-control" type="text"  value="{{student.NameArabic}}" >
+English Name <input #inputLastName class="form-control" type="text"  value="{{student.NameEnglish}}" >
+<button  type="button" class="btn btn-danger" (click)="update(student)">Edit</button>
+
+</div> -->
+</div>
+
